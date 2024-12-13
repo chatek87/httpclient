@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta item="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+    </header>
+
+    <main>
+      <section id="itemFormContainer">
+        <h2>item entry form</h2>
+        <form id="itemForm">
+          <label for="item">Enter an item:</label>
+          <input id="item" type="text" required />
+          <input type="hidden" item="_method" value="POST" />
+          <input id="submitItem" type="submit" value="submit" />
+          <button id="clear" type="reset">clear</button>
+        </form>
+      </section>
+      <span style="display: block; height: 20px"></span>
+      <section id="itemListControls">
+        <button id="remove-btn" type="submit">remove completed</button>
+      </section>
+
+      <section id="itemListContainer">
+        <h2>item list</h2>
+        <ul id="itemList"></ul>
+      </section>
+
+      <article>
+        <figure id="randEmoji"></figure>
+        <p id="randQuote"></p>
+      </article>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
